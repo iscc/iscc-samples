@@ -1,6 +1,7 @@
-__version__ = "0.1.0"
 from pathlib import Path
 from os.path import realpath, dirname
+from typing import List
+
 
 HERE = Path(dirname(realpath(__file__)))
 ROOT = HERE / "files"
@@ -10,17 +11,22 @@ AUDIO = ROOT / "audio"
 VIDEO = ROOT / "video"
 
 
-def texts():
-    return list(TEXT.rglob("*"))
+def all():
+    return texts() + images() + audios() + videos()
 
 
-def images():
-    return list(IMAGE.rglob("*"))
+def texts() -> List[Path]:
+    return sorted(TEXT.rglob("*"))
 
 
-def audios():
-    return list(AUDIO.rglob("*"))
+def images() -> List[Path]:
+    return sorted(IMAGE.rglob("*"))
 
 
-def videos():
-    return list(VIDEO.rglob("*"))
+def audios() -> List[Path]:
+    return sorted(AUDIO.rglob("*"))
+
+
+def videos() -> List[Path]:
+    return sorted(VIDEO.rglob("*"))
+
