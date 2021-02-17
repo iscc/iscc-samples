@@ -6,7 +6,7 @@ def test_samples_all():
     files = samples.all()
     assert isinstance(files, list)
     assert isinstance(files[0], Path)
-    assert len(files) == 48
+    assert len(files) == 50
     assert files[0].name == "demo.doc"
 
 
@@ -14,7 +14,7 @@ def test_samples_texts():
     texts = samples.texts()
     assert isinstance(texts, list)
     assert isinstance(texts[0], Path)
-    assert len(texts) == 16
+    assert len(texts) == 18
     assert texts[0].name == "demo.doc"
 
 

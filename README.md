@@ -40,12 +40,15 @@ You may also want join our developer chat on Telegram at <https://t.me/iscc_dev>
 
 ## Change Log
 
-### [0.2.0] - 2019-05-31
+### [0.3.0] - 2021-02-17
+- Add powerpoint sample files
+
+### [0.2.0] - 2021-01-25
 
 - Add iscc_samples.all()
 - Return files in sorted order
 
-### [0.1.0] - 2019-05-31
+### [0.1.0] - 2021-01-25
 
 - Initial release with basic sample files
 
