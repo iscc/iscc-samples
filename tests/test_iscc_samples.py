@@ -18,6 +18,11 @@ def test_samples_texts():
     assert texts[0].name == "demo.doc"
 
 
+def test_samples_text_ext():
+    texts = samples.texts(".md")
+    assert texts[0].name == "demo.md"
+
+
 def test_samples_images():
     images = samples.images()
     assert isinstance(images, list)

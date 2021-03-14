@@ -15,18 +15,45 @@ def all():
     return texts() + images() + audios() + videos()
 
 
-def texts() -> List[Path]:
-    return sorted(TEXT.rglob("*"))
+def texts(ext=None) -> List[Path]:
+    files = sorted(TEXT.rglob("*"))
+    if ext is None:
+        return files
+    filtered = []
+    for fp in files:
+        if fp.as_posix().endswith(ext):
+            filtered.append(fp)
+    return filtered
 
 
-def images() -> List[Path]:
-    return sorted(IMAGE.rglob("*"))
+def images(ext=None) -> List[Path]:
+    files = sorted(IMAGE.rglob("*"))
+    if ext is None:
+        return files
+    filtered = []
+    for fp in files:
+        if fp.as_posix().endswith(ext):
+            filtered.append(fp)
+    return filtered
 
 
-def audios() -> List[Path]:
-    return sorted(AUDIO.rglob("*"))
+def audios(ext=None) -> List[Path]:
+    files = sorted(AUDIO.rglob("*"))
+    if ext is None:
+        return files
+    filtered = []
+    for fp in files:
+        if fp.as_posix().endswith(ext):
+            filtered.append(fp)
+    return filtered
 
 
-def videos() -> List[Path]:
-    return sorted(VIDEO.rglob("*"))
-
+def videos(ext=None) -> List[Path]:
+    files = sorted(VIDEO.rglob("*"))
+    if ext is None:
+        return files
+    filtered = []
+    for fp in files:
+        if fp.as_posix().endswith(ext):
+            filtered.append(fp)
+    return filtered
