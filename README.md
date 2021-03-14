@@ -40,6 +40,10 @@ You may also want join our developer chat on Telegram at <https://t.me/iscc_dev>
 
 ## Change Log
 
+### [0.4.0] - 2021-03-14
+- Add consistent title metadata to text documents
+- Add support to filter files by file extension
+
 ### [0.3.0] - 2021-02-17
 - Add powerpoint sample files
 
