@@ -44,3 +44,7 @@ def test_samples_videos():
     assert isinstance(videos[0], Path)
     assert len(videos) == 21
     assert videos[0].name == "demo.3g2"
+
+
+def test_audio_cover():
+    assert samples.audios('mp3')[1].name == "withcover.mp3"
