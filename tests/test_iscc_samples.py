@@ -6,7 +6,7 @@ def test_samples_all():
     files = samples.all()
     assert isinstance(files, list)
     assert isinstance(files[0], Path)
-    assert len(files) == 50
+    assert len(files) == 51
     assert files[0].name == "demo.doc"
 
 
@@ -34,7 +34,7 @@ def test_samples_images():
 def test_samples_audios():
     audios = samples.audios()
     assert isinstance(audios[0], Path)
-    assert len(audios) == 5
+    assert len(audios) == 6
     assert audios[0].name == "demo.aif"
 
 

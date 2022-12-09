@@ -40,6 +40,11 @@ You may also want join our developer chat on Telegram at <https://t.me/iscc_dev>
 
 ## Change Log
 
+### [0.5.0] - Unreleased
+- Add MP3 file with cover art
+- Update dependencies
+
+
 ### [0.4.0] - 2021-03-14
 - Add consistent title metadata to text documents
 - Add support to filter files by file extension
