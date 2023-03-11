@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "iscc-samples"
-version = "0.5.0"
+version = "0.6.0"
 description = "A collection of media files as sample data for ISCC testing."
 authors = ["Titusz Pan <tp@py7.de>"]
 license = "CC-BY-4.0"

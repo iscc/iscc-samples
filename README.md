@@ -40,6 +40,9 @@ You may also want join our developer chat on Telegram at <https://t.me/iscc_dev>
 
 ## Change Log
 
+### [0.6.0] - 2023-03-11
+- Add more audio examples (WavPack, AAC, AC3, Opus)
+
 ### [0.5.0] - 2022-12-09
 - Add MP3 file with cover art
 - Update dependencies
